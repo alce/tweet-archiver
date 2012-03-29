@@ -1,0 +1,31 @@
+-@ val terms: List[String]
+-@ val tweets: Iterator[com.mongodb.casbah.Imports.BasicDBObject]
+
+!!! 5
+%html 
+  %head
+    %title Tweets
+    :css
+      body {
+        background-color: #DBD4C2;
+        width: 1000px;
+        margin: 50px auto;
+      }
+
+      h2 {
+        margin-top: 2em;
+      }
+
+  %body
+    %h1 Tweet Archive
+
+    - for(term <- terms)
+      %a{:href => {"/?tag=" + term}}= term
+
+    - for(tweet <- tweets)
+      %h2= tweet("text")
+      %p
+        %a{:href => {"http://twitter.com/" + tweet("from_user")}}= tweet("from_user")
+        on
+        = tweet("created_at")
+      %img{:src => {tweet("profile_image_url")}, :width => "48"}
