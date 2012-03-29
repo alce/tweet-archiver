@@ -1,8 +1,8 @@
 organization := "com.github.alce"
 
-name := "twitter_archive"
+name := "tweet_archiver"
 
-version := "0.0.1"
+version := "0.1.0"
 
 scalaVersion := "2.9.1"
 
