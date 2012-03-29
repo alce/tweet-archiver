@@ -13,7 +13,7 @@ It's a learning excercise and is not fit for any purpose other than experimentat
 
 1. Make sure `mongod` is alive and well
 
-        @1.9.3 ~ % mongo 
+        % mongo 
         MongoDB shell version: 2.0.4
         connecting to: test
         > exit
@@ -22,10 +22,13 @@ or [Install mongoDB](http://www.mongodb.org/display/DOCS/Quickstart)
 
 2. Clone this repo
 
+        git clone https://github.com/alce/tweet-archiver.git
+        cd tweet-archiver
+
 
 3. Run Simple Build Tool
 
-        @1.9.3@mongo ~/desktop/mongo/tweet_archiver(master) % sbt
+        % sbt
         [info] Loading project definition from ... 
         [info] Loading project definition from ...
         [info] Set current project to ..
